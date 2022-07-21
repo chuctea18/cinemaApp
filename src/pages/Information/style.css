@@ -1,0 +1,254 @@
+
+/*--------------------------------------------------------------
+# GIỚI THIỆU
+--------------------------------------------------------------*/
+/* =============CSS GIOI THIEU========== */
+*{
+  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* background-color:  #310029; */
+}
+
+/* =============CSS INTRO SECTION============ */
+.intro-section {
+  position: relative;
+  min-height: 360px;
+  width: 100%;
+  height: auto;
+  display: block;
+ 
+  margin: 0;
+  padding: 0;
+  /* -webkit-transition: height 0.3s ease-in-out; */
+}
+
+.intro-title {
+  /* background-color: #392a32; */
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  padding: 20px;
+  margin: 0 -12px 0 0;
+}
+
+.intro-title h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.intro-box {
+  position: relative;
+  display: block;
+  opacity: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+.intro-wrap {
+  position: relative;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-bottom: 60px;
+}
+
+.intro-item {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.intro-pic {
+  position: relative;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  /* -webkit-border-radius: 50%; */
+  overflow: hidden;
+  border: 6px solid white;
+  line-height: 0;
+  z-index: 2;
+  box-shadow: 8px 8px 0 #221820;
+}
+
+.intro-pic img {width: 150%;}
+
+.intro-item:nth-child(odd)
+.intro-text {
+  padding: 40px 0 0 30px;
+  text-align: left;
+}
+
+.intro-item:nth-child(odd)
+h3 {
+  background-color: #BA3469;
+  padding: 17px 50px 17px 121px;
+  border-radius: 0 50px 0 0;
+  margin-left: -125px;
+}
+
+.intro-item h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+  line-height: 30px;
+  text-transform: uppercase;
+  z-index: 1;
+  display: inline-block;
+  width: auto;
+  margin-bottom: 10px;
+  max-width: 400px;
+}
+
+.intro-text {
+  display: block;
+}
+
+.intro-text p{
+  box-sizing: border-box;
+  margin: 0px; 
+  padding: 0px; 
+  border: 0px;
+  vertical-align: baseline; 
+  font-size: 24px; 
+  text-size-adjust: none;                             
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255,255, 255);
+}
+
+.intro-text span {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.intro-note {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.intro-note p{
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 18px;
+ font-weight: normal;
+ color: var(--btn);
+ line-height: 30px;
+ text-align: center;
+ margin-bottom: 30px;
+}
+
+.intro-note p span {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p.welcome {
+  position: relative;
+  display:inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  text-align: center;
+  font-style: italic;
+  padding: 0 60px;
+}
+
+p.welcome:before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 34px;
+  height: 27px;
+  left: 0;
+  top: 0;
+  background: url(../../assets/img/icon-welcome-before.png) no-repeat center top;
+}
+
+p.welcome:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 34px;
+  height: 27px;
+  right: 0;
+  top: 15px;
+  background: url(../../assets/img/icon-welcome-after.png) no-repeat center top;
+}
+
+.section-image-title {
+  position: relative;
+  width: 100%;
+  padding: 40px 0;
+  z-index: 1;
+}
+
+.section-image-title h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 36px;
+}
+
+.cinema-img-wrap {
+  width: 100%;
+  max-width: 1200px;
+  
+  text-align: center;
+  padding: 0 20px;
+  margin: auto;
+}
+
+.slide-wrapper-outer {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  
+}
+
+.slide-item {
+  width: 500px;
+  
+}
+
+.cinema-img-item {
+  position: relative;
+  width: auto;
+  text-align: center;
+}
+
+.cinema-pic {
+  position: relative;
+  display: block;
+  width: 96%;
+  
+  /* vertical-align: top; */
+  line-height: 0;
+  overflow: hidden;
+  max-width: 400px;
+  max-height: 267px;
+  /* margin: 10px 2px; */
+  box-shadow: 10px 10px 0 rgb(0 0 0 / 20%);
+  border: 4px solid #5c1a55;
+  margin: 0px 2.5px 20px;
+}
+
+.cinema-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

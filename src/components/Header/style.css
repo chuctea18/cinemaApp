@@ -1,0 +1,103 @@
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+#lotto-header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+h1>a{
+  text-decoration: none !important;
+  color: #dbb42c !important;
+  font-family: "Denk One";
+}
+a{
+  text-decoration: none !important;
+}
+@font-face {
+  font-family: "Denk One";
+  src: local("Denk One"),
+   url("../../assets/fonts/denk-one/DenkOne-Regular.ttf") format("truetype");
+  font-weight: bold;
+  }
+
+#lotto-header .title {
+    color: #dbb42c !important;
+    font-weight: 400;
+}
+
+.search-form {
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+
+.search-form input#search {
+    width: 300px;
+    height: 40px;
+    background: #2b303b;
+    font-size: 10pt;
+    color: #63717f;
+    padding-left: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 40px;
+}
+
+.search-form .search-input {
+    background: #2b303b;
+}
+
+.search-form input#search::-webkit-input-placeholder {
+    color: #65737e;
+}
+
+.search-form .icon {
+    position: absolute;
+    margin-right: 15px;
+    right: 0;
+    margin-left: 71px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+/* ///edit */
+.login-btn,
+.register-btn {
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--white);
+    background-color: var(--primary);
+    padding: 10px 20px;
+    border: 3px solid #5c5539; 
+}
+
+.register-btn {
+    margin-left: 4px;
+}
+
+.login-btn:hover,
+.register-btn:hover {
+    background-color: #dbb42c;
+}
+
+.name_text {
+    display: flex;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #fff;
+    align-items: flex-end;
+  }
+  .img_avt {
+    width: 40px;
+    height: 40px;
+    position: inherit;
+    border-radius: 50px;
+  }
+
+  

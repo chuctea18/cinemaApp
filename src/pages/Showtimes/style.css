@@ -1,0 +1,1727 @@
+
+/*--------------------------------------------------------------
+# Lịch chiếu
+--------------------------------------------------------------*/
+
+.item:nth-child(odd)
+.text {
+  padding: 40px 0 0 30px;
+  text-align: left;
+}
+
+
+.item h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+  line-height: 30px;
+  text-transform: uppercase;
+  z-index: 1;
+  display: inline-block;
+  width: auto;
+  margin-bottom: 10px;
+  max-width: 400px;
+}
+
+.text {
+  display: block;
+}
+
+.text p{
+  box-sizing: border-box;
+  margin: 0px; 
+  padding: 0px; 
+  border: 0px;
+  vertical-align: baseline; 
+  font-size: 24px; 
+  text-size-adjust: none;                             
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255,255, 255);
+}
+
+.text span {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cinema-list-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.cinema-address {
+    color: var(--white);
+}
+
+.c_address {
+    margin: 0;
+}
+
+
+
+.schedule-list-content {
+    margin: 0 auto;
+}
+
+.schedule-list-wrap {
+    margin: 0 auto;
+}
+
+.schedule-item {
+    display: table;
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+.schedule-item .film-item {
+    background-color: #f18720;
+    position: relative;
+    z-index: 1;
+    display: table-cell;
+    vertical-align: middle;
+    width: 450px;
+    height: auto;
+    box-shadow: 10px 10px 10px 0 rgb(0 0 0 / 30%), 0 0 50px 0 rgb(0 0 0 / 40%) inset;
+    padding: 20px;
+}
+
+.schedule-item .film-item-pic {
+    float: left;
+    width: 50%;
+    height: auto;
+    max-width: 200px;
+    margin: 0 15px 0 -60px;
+}
+
+.schedule-item .film-item .film-item-pic img {
+    border: 5px solid #f2c08f;
+}
+
+.schedule-item .film-item-pic img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    pointer-events: none;
+    box-shadow: 5px 5px 0 rgb(0 0 0 / 50%);
+}
+
+.schedule-item .film-item-txt h3 {
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.schedule-item .film-item-txt p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    line-height: 20px;
+    text-align: left;
+    max-height: 160px;
+    overflow: hidden;
+}
+
+.schedule {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    z-index: 0;
+}
+.row_showtime{
+    margin-bottom: 1px;
+    position: relative;
+    display: block;
+    min-width: 750px;
+}
+.container {
+    margin-inline-start: inherit;
+    min-width: 1000px;
+    display: grid;
+    /* left: 20%; */
+    justify-content: space-around;
+
+}
+
+.row:nth-child(odd) {
+    /* background-color:#fff; */
+    left: 10%;
+}
+
+.row-date {
+    float: left;
+    width: 124px;
+    height: 100%;
+    background: #f5c549;
+    color: #000;
+    font-family: "Futurab";
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 81px;
+    transform: skewX(-10deg);
+    -webkit-transform: skewX(-10deg);
+    text-align: center;
+    margin-left: -20px;
+    padding-left: 20px;
+    position: absolute;
+    left: -10px;
+    top: 0;
+}
+
+.row-date span {
+    transform: skewX(10deg);
+    -webkit-transform: skewX(10deg);
+    line-height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -7px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.row-hour {
+    margin-left: 120px;
+    height: 100%;
+    padding: 10px 0;
+    min-height: 81px;
+}
+
+.row-hour ul {
+    height: 100%;
+    line-height: 60px;
+}
+
+.row-hour li:nth-child(odd) {
+    background: #7c2665;
+}
+
+.row-hour li {
+    display: inline-block;
+    width: auto;
+    color: #fff;
+    height: 100%;
+    background: #ba3469;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0 10px;
+    margin: 0 1px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.row-hour li:hover {
+    background-color: #f5c549;
+}
+
+.film-item.t-2d .icon-2d {
+  display: inline-block;
+}
+
+.film-item-type span {
+  display: inline-block;
+}
+.icon-2d {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background: url(../../assets/img/icon-2d.png) no-repeat center center;
+  background-size: contain;
+  -webkit-background-size: contain;
+  margin-left: 20px;
+}
+
+/* ===========ODER_SECTION============== */
+.section-order {
+    /* position: absolute; */
+    width: 100%;
+    left: 0;
+    top: 121px;
+    z-index: 10;
+    overflow: hidden;
+    -webkit-transition: height 0.6s ease-in-out;
+    display: block;
+  }
+  
+  .close-order {
+    vertical-align: baseline;
+    text-decoration: none;
+    color: #f2b819;
+    background: url(../../assets/img/close.png) no-repeat center center;
+    font-size: larger;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 150px;
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(186, 52, 105, 1);
+  }
+  
+  .order-title {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: url(../../assets/img/order-wrap-bg.jpg) no-repeat center top;
+  }
+  
+  .order-wrap {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  .order-overview {
+    width: 700px;
+    display: inline-block;
+  }
+  
+  .order-overview h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 10px;
+    line-height: 30px;
+    text-align: left;
+  }
+  
+  .order-overview h2 strong {
+    font-weight: normal;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  .order-overview h2 span {
+    text-transform: uppercase;
+  }
+  
+  .about-ticket {
+    display: block;
+    width: 100%;
+    display: table;
+    border-spacing: 1px;
+  }
+  
+  ol,
+  ul {
+    list-style: none;
+  }
+  
+  .about-ticket li {
+    display: table-cell;
+    margin: 0 -1px;
+    text-align: center;
+    height: 70px;
+    vertical-align: middle;
+    height: 70px;
+    padding: 0 20px;
+  }
+  
+  .about-ticket li:nth-child(1) {
+    background-color: #f18720;
+    width: 104px;
+    padding: 0 0 0 20px;
+  }
+  
+  .about-ticket li:nth-child(2) {
+    background-color: #f18720;
+  }
+  
+  .about-ticket li:nth-child(3) {
+    background-color: #e00d7a;
+  }
+  
+  .about-ticket li:nth-child(4) {
+    background-color: #e00d7a;
+    min-width: 200px;
+  }
+  
+  .about-ticket li .caption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  /* p {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 100%;
+    -webkit-text-size-adjust: none;
+  } */
+  /*  rút gọn lại nha con kia */
+  .about-ticket li:nth-child(1) .value {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+  }
+  
+  .about-ticket li:nth-child(2) .value {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+  }
+  
+  .about-ticket li:nth-child(3) .value {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .about-ticket li:nth-child(4) .value {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .about-ticket li .value {
+    color: #fff;
+    text-align: left;
+  }
+  
+  .about-ticket li sup,
+  sub {
+    margin-left: 5px;
+    font-size: 65%;
+  }
+  
+  .about-seat {
+    display: block;
+    width: 100%;
+    display: table;
+    text-align: center;
+    border-spacing: 1px;
+  }
+  
+  .about-seat li {
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    background-color: #450828;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    line-height: 18px;
+  }
+  
+  .seat-number {
+    text-align: left;
+    padding: 5px 15px;
+  }
+  
+  .about-seat li:nth-child(1) {
+    width: 104px;
+  }
+  
+  .order-clock {
+    vertical-align: bottom;
+    width: auto;
+    max-width: 170px;
+    position: relative;
+    bottom: 38px;
+  }
+  
+  .order-clock .title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    text-align: center;
+  }
+  
+  /* CSS payment-part */
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .final-content {
+    position: relative;
+    /* display: none; */
+    width: 100%;
+    height: auto;
+  }
+  
+  .final-confirm {
+    position: relative;
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 10px 10px 0 rgb(0 0 0 / 10%), 0 0 30px rgb(0 0 0 / 30%) inset;
+    padding: 40px 0;
+    -webkit-border-radius: 0 50px 0 50px;
+    border-radius: 0 50px 0 50px;
+    text-align: center;
+    z-index: 999;
+    margin: 0 auto 40px auto;
+    padding: 30px 50px;
+    max-width: 900px;
+  }
+  
+  .final-confirm > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 1.2;
+    text-align: center;
+    color: #707070;
+  }
+  
+  .confirm-box {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+  
+  .confirm-box > div {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .confirm-cus {
+    margin: 30px auto 0 auto;
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+  
+  .confirm-cus {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    text-align: left;
+  }
+  
+  .confirm-cus p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .confirm-cus p strong {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  
+  .confirm-box > div {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .confirm-film {
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+  
+  .confirm-film-pic {
+    float: left;
+    width: auto;
+    max-width: 40%;
+    overflow: hidden;
+    margin: 0 15px 0 0;
+  }
+  
+  .confirm-film-pic img {
+    display: block;
+    height: 300px;
+    width: auto;
+  }
+  
+  .confirm-film-text {
+    text-align: left;
+  }
+  
+  .confirm-film-text h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #666;
+    line-height: 1.4;
+  }
+  
+  .confirm-film-text p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #666;
+  }
+  
+  .confirm-box > div {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .confirm-ticket {
+    margin: 0 auto;
+    padding: 0;
+    display: table !important;
+    border-spacing: 1px;
+  }
+  
+  .confirm-ticket li .confirm-mark {
+    width: calc(100% - 80px);
+  }
+  
+  .confirm-ticket > .confirm-mark {
+    float: none;
+    display: block;
+    display: table-cell;
+    vertical-align: middle;
+    width: 80px;
+    min-width: 80px;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .confirm-mark {
+    float: left;
+    width: auto;
+    max-width: 60%;
+    text-align: left;
+    padding: 5px 10px 5px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #666;
+    padding: 10px 20px;
+  }
+  
+  .confirm-ticket li .confirm-value {
+    width: 80px;
+  }
+  
+  .confirm-ticket > .confirm-text {
+    float: none;
+    display: block;
+    display: table-cell;
+    vertical-align: middle;
+    width: calc(100% - 80px);
+    background-color: #f2f2f2;
+  }
+  
+  .confirm-ticket ul {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .confirm-ticket li:last-child {
+    border: 0;
+  }
+  
+  .confirm-ticket li {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding: 5px 20px;
+    border-bottom: 1px solid #fff;
+  }
+  
+  .confirm-value {
+    float: right;
+    width: auto;
+    max-width: 40%;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  
+  .confirm-total .confirm-mark {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 0;
+  }
+  
+  .confirm-box > div {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .confirm-total {
+    margin: 30px auto;
+  }
+  
+  .confirm-box > div {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .cons-print {
+    position: relative;
+    display: block;
+    text-align: right;
+  }
+  
+  /* Terms */
+  .final-form {
+    position: relative;
+    display: block;
+    width: 90%;
+    height: auto;
+    max-width: 900px;
+    background: #fff;
+    box-shadow: 10px 10px 0 rgb(0 0 0 / 10%), 0 0 30px rgb(0 0 0 / 30%) inset;
+    padding: 40px 0;
+    border-radius: 50px 0 50px 0;
+    border-radius: 50px 0 50px 0;
+    text-align: center;
+    z-index: 999;
+    margin: 0 auto 70px auto;
+    padding: 30px 50px;
+  }
+  
+  .final-form .input-text {
+    margin: 0 0 20px 0;
+    box-shadow: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #131313;
+    line-height: 20px;
+  }
+  
+  .input-text {
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-shadow: 3px 3px 0 rgb(0 0 0 / 10%);
+    border-radius: 25px;
+  }
+  
+  .final-form .input-text > h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  
+  .terms_condition_paypal {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    margin: 30px 0;
+    overflow: inherit;
+    overflow-y: auto;
+    padding: 0 0 30px 0;
+    text-align: left !important;
+  }
+  
+  .terms_condition_paypal p {
+    margin: 0;
+  }
+  
+  .payment_check {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .payment_check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: #eee;
+    border-radius: 3px;
+  }
+  
+  .payment_check:hover .checkmark {
+    background: #ccc;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .payment_check .checkmark:after {
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  
+  .payment_check input:checked ~ .checkmark {
+    background: #e00d7a;
+  }
+  
+  .payment_check input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* input[type="radio"] {
+    appearance: none;
+    background-color: #fff;
+    margin-right: 10px;
+    font: inherit;
+    color: #e00d7a;
+    width: 1.15em;
+    height: 1.15em;
+    width: 20px;
+    height: 20px;
+    border: 0.15em solid #e00d7a;
+    border-radius: 50%;
+  } */
+  
+  .payment_method_radio {
+    display: block;
+    text-align: left;
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+    padding-left: 40px;
+  }
+  
+  .payment_method_radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .payment_method_icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: #eee;
+    border-radius: 50%;
+  }
+  
+  .payment_method_radio:hover .payment_method_icon {
+    background: #ccc;
+  }
+  
+  .payment_method_icon:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .payment_method_radio .payment_method_icon:after {
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: solid 3px white;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  
+  .payment_method_radio input:checked ~ .payment_method_icon {
+    background: #e00d7a;
+  }
+  
+  .payment_method_radio input:checked ~ .payment_method_icon:after {
+    display: block;
+  }
+  
+  .payment_method label:nth-child(1):after {
+    content: "";
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 36px;
+    background: url(../../assets/img/pay_01.jpg) no-repeat left top;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  
+  .payment_method label:nth-child(3):after {
+    content: "";
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 36px;
+    background: url(../../assets/img/pay_02.jpg) no-repeat left top;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  
+  .input-but input[type="button"] {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    background-color: #f37520;
+    color: #fff;
+    border-radius: 30px 30px 30px 0;
+    padding: 15px 31px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .final-form .input-but input[type="button"].cancel {
+    background-color: #e00d7a;
+    border-radius: 30px 30px 0px 30px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 30px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .final-form .input-but input[type="button"].cancel:hover {
+    background-color: #f37520;
+  }
+  
+  .final-form .input-but input[type="button"].ok {
+    position: relative;
+    background-color: var(--pink);
+    height: 50px;
+    line-height: 50px;
+    padding: 0 30px 0 30px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .final-form .input-but input[type="button"].ok:hover {
+    background-color: #f37520;
+  }
+  
+  .check_terms_condition {
+    width: 100%;
+    height: 20px;
+  }
+  
+  .payment_method div input {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    margin: -5px 0 0 0;
+    cursor: pointer;
+  }
+  /* CSS end payment-part */
+  
+  /* CSS Order-content*/
+  .order-content {
+    position: relative;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    min-height: 800px;
+    height: 100%;
+    overflow: hidden;
+  }
+  /*ticket-content */
+  .ticket-content {
+    position: relative;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    display: none;
+    /* none - block */
+  }
+  
+  .ticket-wrap {
+    width: 90%;
+    display: block;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+  
+  .tbl-wrap {
+    display: block;
+    width: 100%;
+    margin-bottom: 2px;
+  }
+  
+  .ticket-wrap table {
+    width: 100%;
+    min-width: 600px;
+    border-spacing: 0;
+  }
+  
+  table thead tr tbody span {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+  }
+  
+  .ticket-wrap table th {
+    background-color: #f18720;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 16px 18px;
+    box-shadow: 10px 10px 0 rgb(0 0 0 / 10%);
+    border-right: 2px solid #ccc;
+  }
+  
+  .ticket-wrap table th:last-child {
+    border: none;
+  }
+  
+  .ticket-wrap table td {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 22px;
+    padding: 10px 20px;
+    /* text-align: center; */
+    color: #131313;
+    border-right: 2px solid #ccc;
+    vertical-align: middle;
+  }
+  
+  .ticket-wrap table td:nth-child(1) {
+    background-color: #fff;
+    text-align: left;
+    width: 24%;
+    box-shadow: 10px 10px 0 rgb(0 0 0 / 10%);
+  }
+  
+  .ticket-wrap table td:nth-child(2) {
+    background-color: #acacac;
+    text-align: center;
+    width: 20%;
+    box-shadow: 10px 10px 0 rgb(0 0 0 / 10%);
+    padding: 10px 0;
+  }
+  
+  .ticket-wrap table td:nth-child(3) {
+    background-color: #e8e7e7;
+    text-align: center;
+    width: 26%;
+    box-shadow: 10px 10px 0 rgb(0 0 0 / 10%);
+  }
+  
+  .ticket-wrap table td:nth-child(4) {
+    background-color: #e8e7e7;
+    text-align: right;
+    box-shadow: 10px 10px 0 rgb(0 0 0 / 10%);
+  }
+  
+  .ticket-wrap table td:last-child {
+    border: none;
+  }
+  
+  .ticket-wrap table td.ticket-price,
+  .ticket-wrap table td.ticket-total {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 22px;
+  }
+  
+  .minus {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(../../assets/img/icon-minus.png) no-repeat center center;
+    vertical-align: middle;
+    text-indent: 9999px;
+    overflow: hidden;
+  }
+  
+  .ticket-num input[type="text"] {
+    display: inline-block;
+    height: 30px;
+    vertical-align: middle;
+    padding: 0 10px;
+    border: 0;
+    border-radius: 0;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+    width: 60px;
+  }
+  
+  .add {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(../../assets/img/icon-add.png) no-repeat center center;
+    vertical-align: middle;
+    text-indent: 9999px;
+    overflow: hidden;
+  }
+  
+  .ticket-wrap table td sup {
+    margin-left: 3px;
+    border-bottom: 1px solid #131313;
+  }
+  
+  sup {
+    text-decoration: none;
+    bottom: 5px;
+    font-size: 70%;
+    vertical-align: baseline;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  .ticket-cal {
+    position: relative;
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 10px 10px 0 rgb(0 0 0 / 10%);
+    padding: 30px 0;
+    margin-bottom: 2px;
+  }
+  
+  .ticket-cal li {
+    display: inline-block;
+    width: 49%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #acacac;
+  }
+  
+  .total-ticket-num {
+    text-align: right;
+    padding: 0 30px 0 0;
+  }
+  
+  .ticket-cal li span {
+    color: #5f5f5f;
+    margin: 0 5px 0 10px;
+  }
+  
+  .ticket-cal li mark {
+    background-color: transparent;
+    color: #5f5f5f;
+  }
+  
+  mark {
+    text-decoration: none;
+    font-weight: bold;
+    vertical-align: baseline;
+  }
+  
+  .total-ticket-amount {
+    text-align: left;
+    padding: 0 0 0 30px;
+  }
+  
+  .ticket-cal li sup {
+    text-transform: lowercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: #5f5f5f;
+    border-bottom: 1px solid #5f5f5f;
+  }
+  
+  .ticket-wrap .input-but {
+    text-align: center;
+    margin: 20px 0;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+  }
+  
+  .input-but {
+    position: relative;
+    width: auto;
+  }
+  
+  .ticket-wrap .input-but #ticket-back {
+    border-radius: 30px 30px 0px 30px;
+    -border-radius: 30px 30px 0px 30px;
+  }
+  .ticket-wrap .input-but input {
+    margin: 5px;
+  }
+  .input-but input[type="button"] {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    background-color: #f37520;
+    color: #fff;
+    border-radius: 30px 30px 30px 0;
+    -webkit-border-radius: 30px 30px 30px 0;
+    padding: 15px 31px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: none;
+    -webkit-appearance: none;
+  }
+  
+  .input-but input[type="button"]:hover {
+    background-color: var(--pink);
+  }
+  
+  .ticket-wrap .input-but #ticket-next-ticket {
+    opacity: 0.5;
+    pointer-events: none; 
+  }
+  
+  /* end CSS ticket-content */
+  
+  /* CSS ciname-content-seat */
+  .cinema-content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: none;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .cinema-name {
+    position: relative;
+    width: 100%;
+    background-color: #ba3469;
+    border-top: 1px solid #fff;
+    padding: 9px 10px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+  .cinema-name h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .cinema-wrap {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    margin-bottom: 10px;
+  }
+  
+  .cinema-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #fff;
+    display: block;
+    background-color: #969696;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    line-height: 42px;
+    box-shadow: 5px 5px 0 rgb(0 0 0 / 10%);
+    text-align: center;
+
+  }
+  
+  .cinema-seat {
+    width: auto;
+    text-align: center;
+    display: none;
+    margin-bottom: 50px;
+  }
+  
+  .seat-container .single {
+    width: 43px;
+    height: 46px;
+    position: absolute;
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .seat-container .single:hover {
+    background-position: center -46px;
+  }
+
+  .seat-container .singleChooose {
+    width: 43px;
+    height: 46px;
+    position: absolute;
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: url(../../assets/img/single-chair.png) no-repeat center -46px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+  }
+  .seat-container .singleChooosed {
+    width: 43px;
+    height: 46px;
+    position: absolute;
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: url(../../assets/img/single-chair.png) no-repeat center -92px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+  }
+  .cinema-seat div.single {
+    background: #ededed url(../../assets/img/single-chair.png) no-repeat center top;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+  }
+
+  
+  .cinema-note {
+    position: relative;
+    width: 100%;
+    padding-left: 0;
+  }
+  
+  .cinema-note li {
+    display: inline-block;
+    line-height: 46px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #434343;
+    margin: 0 4px;
+  }
+  
+  .cinema-note li.single {
+    background: url(../../assets/img/single-chair.png) no-repeat left top;
+    padding-left: 50px;
+  }
+  
+  .cinema-note li.choosing {
+    background: url(../../assets/img/single-chair.png) no-repeat left -46px;
+    padding-left: 50px;
+  }
+  
+  .cinema-note li.busy {
+    background: url(../../assets/img/single-chair.png) no-repeat left -92px;
+    padding-left: 50px;
+  }
+  
+  .cinema-note li.road {
+    position: relative;
+    padding-left: 40px;
+  }
+  
+  .cinema-note li.road:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    background: #c6c6c6;
+  }
+  
+  .cinema-btn {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .cinema-btn input[type="button"]:hover {
+    background-color: #f37520;
+  }
+  
+  .cinema-btn input[type="button"] {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: uppercase;
+    background-color: var(--pink);
+    color: #fff;
+    padding: 10px 30px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: none;
+    -webkit-appearance: none;
+    margin: 5px;
+  }
+  
+  #cinema-back {
+    border-radius: 30px 30px 0px 30px;
+  }
+  
+  #cons-chose {
+    border-radius: 25px;
+  }
+  
+  #cinema-next-opacity {
+    border-radius: 30px 30px 30px 0;
+    -webkit-border-radius: 30px 30px 30px 0;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  #cinema-next {
+    border-radius: 30px 30px 30px 0;
+    -webkit-border-radius: 30px 30px 30px 0;
+  }
+  .cinema-btn.active #cinema-next {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  /* end ciname-content-seat*/
+
+
+
+/* // =======css food====== */
+
+/*combo content*/
+.cons-content.show {
+  display: block;
+  opacity: 1;
+}
+
+.cons-content {
+  position: absolute;
+  left: 50%;
+  top: 70px;
+  width: 900px;
+  height: auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 3;
+  margin: 0 40px 0 -450px;
+  display: none;
+  /* opacity: 0; */
+  text-align: center;
+}
+
+.cons-box {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0 0 30px 0;
+  background-color: #ddd;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.cons-box-list {
+  /* width: 100%; */
+  padding-left: 0;
+}
+
+.cons-content ul {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.cons-content li {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.cons-content li h2 {
+  padding: 15px 20px;
+  background-color: #e00d7a;
+  font-family: 'Arial';
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.combo-item:nth-child(even) {
+  background-color: #e8e7e7;
+}
+
+.combo-item {
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+}
+
+.combo-text {
+  display: table-cell;
+  width: auto;
+  max-width: 560px;
+  vertical-align: middle;
+  text-align: left;
+  padding: 10px 20px;
+}
+
+.combo-text h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.combo-text p {
+  margin: 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #000;
+}
+
+.combo-price {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #e00d7a;
+  text-transform: uppercase;
+}
+
+.combo-price span {
+  margin: 0 5px;
+}
+
+.combo-price sup {
+  text-transform: lowercase;
+}
+
+.combo-input {
+  display: table-cell;
+  width: 120px;
+  vertical-align: middle;
+}
+
+.cmb-minus {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    background: url(../../assets/img/icon-minus.png) no-repeat center center;
+    vertical-align: middle;
+    text-indent: 9999px;
+    overflow: hidden;
+    background-color: #999;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.cmb-add {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  background: url(../../assets/img/icon-add.png) no-repeat center 7px;
+  vertical-align: middle;
+  text-indent: 9999px;
+  overflow: hidden;
+  background-color: #e00d7a;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.combo-input > * {
+    /* display: inline-block; */
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.combo-input input[type="text"] {
+  display: inline-block;
+  height: 30px;
+  vertical-align: middle;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  /* outline: none; */
+  text-align: center;
+  font-size: 15px;
+  /* -webkit-appearance: none; */
+}
+
+.combo-total {
+  display: table-cell;
+  width: 120px;
+  padding: 0 20px 0 0;
+  vertical-align: middle;
+  text-align: right;
+}
+
+.combo-total-outer {
+  display: block;
+  width: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #e00d7a;
+  font-weight: bold;
+}
+
+.combo-total-outer span {
+  margin: 0 3px 0 0;
+}
+
+.combo-total-outer sup {
+  font-weight: bold;
+}
+
+
+.cons-input {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.cons-input input:nth-child(odd) {
+  -webkit-border-radius: 0 30px 30px 30px;
+  border-radius: 0 30px 30px 30px;
+}
+
+.cons-cancel {
+  background-color: #f37520;
+}
+.cons-ok, .cons-cancel {
+  padding: 10px 30px;
+  background-color: #f37520;
+  font-family: 'Arial';
+  font-weight: bold;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border: none;
+  -webkit-appearance: none;
+  margin: 0 5px;
+}
+
+.cons-input input:nth-child(even) {
+  -webkit-border-radius: 30px 0 30px 30px;
+  border-radius: 30px 0 30px 30px;
+}
+
+.cons-ok {
+  background-color: #e00d7a;
+}
+
+.cons-top {
+  position: absolute;
+  top: 0;
+  left: calc(100% + 10px);
+  display: block;
+  width: 200px;
+}
+
+.cons-icon {
+  display: block;
+  width: 96px;
+  height: 112px;
+  margin: 0 auto 10px auto;
+  background: url(../../assets/img/icon-promotion.png) no-repeat center center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.cons-total {
+  display: inline-block;
+  width: auto;
+  max-width: 200px;
+}
+
+.cons-value {
+  display: block;
+  width: 100%;
+  height: auto;
+  font-size: 24px;
+  font-family: 'Futurab';
+  font-weight: normal;
+  color: #fff;
+}
+
+.cons-text {
+  display: block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.cons-text li {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  line-height: 1.2;
+  margin: 5px 0 0 0;
+}

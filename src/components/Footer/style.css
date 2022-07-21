@@ -1,0 +1,32 @@
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer{
+    text-align: center;
+     background: black !important;
+  }
+  .row-footer{
+      color: #ECECEC;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: auto;
+      align-items:center;
+      /* padding: 25px 0;
+      background: #21131f!important; */
+      padding-top: 15px;
+      /* background: rgb(16, 16, 16) !important; */
+  }
+  .logout {
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #f18720;
+    align-items: center;
+}

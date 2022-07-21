@@ -1,0 +1,187 @@
+/*--------------------------------------------------------------
+# Mua vé nhanh
+--------------------------------------------------------------*/
+.cart-content {
+  position: relative;
+  height: auto;
+  margin-top: 5px;
+}
+
+.cart-content::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 100%;
+  height: 136px;
+  opacity: 0.9;
+  background: url(../../assets/img/bg_buyticket.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.cart-wrap {
+  display: flex;
+  padding: 21px;
+  width: 83%;
+  margin-left: 18%;
+}
+
+.block-title {
+  max-width: 200px;
+}
+
+.block-title h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 45px;
+  font-weight: bolder;
+  color:  #e00d7a;
+  display: block;
+  text-shadow: 4px 4px 0 rgb(0 0 0 / 10%);
+}
+
+.block-title:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 13px;
+  width: 114px;
+  height: 130px;
+  background: url(../../assets/img/icon-ticket.png) no-repeat center center;
+}
+
+.block-list {
+    user-select: none;
+    display: flex;
+    vertical-align: middle;
+    width: 65%;
+    margin-left: 80px;
+    max-width: 910px;
+    align-self: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.select-list {
+  position: relative;
+  height: 50px;
+  width: 270px;
+  margin-left: 15px;
+  display: inline-block;
+
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+ 
+}
+
+
+.select-list[data-cate="film"] .select-header {
+  border-radius: 0 30px 30px 30px;
+  width: 100%;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  background-image: url(../../assets/img/down_icon.png);
+  background-repeat: no-repeat; 
+  background-position: right 0.75rem center;
+  background-size: 20px 20px;
+}
+
+.select-header {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.select-list:hover {
+  display: block;
+}
+
+/* .list:hover {
+  background-color: var(--pink) !important;
+} */
+
+/* .select-box {
+  position: absolute;
+  margin-top: 49px;
+  display: none;
+  z-index: 2;
+  width: 100%;
+}
+
+.select-box li a:hover {
+  background-color: #e00d7a;
+  color: var(--white);
+}
+
+.select-box ul {
+  padding: 0;
+  height: auto;
+  text-align: center;
+  display: block;
+  position: relative;
+  max-height: 350px;
+  overflow: hidden;
+  overflow-y: auto;
+} */
+
+/* .select-box li {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  background-color: #fff;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  border-bottom: 1px solid #e00d7a;
+} */
+
+/* .select-box li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  color: #707070;
+  font-size: 16px;
+  font-family: "MyriadCondensed";
+  display: block;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  text-align: left;
+} */
+
+/* .film-hour {
+  background-color: var(--white);
+  padding: 8px 10px;
+} */
+/* 
+.film-hour li {
+  display: inline-block;
+  width: 42%;
+  text-align: center;
+  margin: 1px;
+  border: none;
+  background-color: #bcbcbc;
+} */
+
+/* .film-hour li a {
+  font-family: "Futurab";
+  font-size: 18px;
+  font-weight: bold;
+  color: #4d4d4d;
+  text-align: center;
+} */
